@@ -199,3 +199,38 @@ header {
   margin: 0 auto;
   margin-bottom: 60px;
 }
+
+.thirdsection__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 70px;
+}
+
+.thirdsection__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.thirdsection__text h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.thirdsection__text p {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(33, 37, 41, 0.5019607843);
+  font-family: "Work Sans", sans-serif;
+}
+.thirdsection__text .btn-third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
