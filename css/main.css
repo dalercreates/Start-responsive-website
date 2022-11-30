@@ -61,11 +61,16 @@ body {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 
 nav {
-  margin: 35px 0 35px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,6 +81,9 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 75px;
+  background-color: #74C69D;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 nav button {
   display: none;
@@ -99,7 +107,15 @@ nav button {
   color: #212529;
 }
 
+.window-scroll {
+  background-color: #212529;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
 header {
+  margin-top: 115px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -110,6 +126,7 @@ header {
 }
 
 .header {
+  position: relative;
   background-color: #74C69D;
 }
 
@@ -233,4 +250,80 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.fourth-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners__info p {
+  width: 404px;
+  margin: 0 auto;
+}
+
+.partners__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.partners__card {
+  padding: 30px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 45px;
+}
+.partners__card img {
+  margin: 0 10px 10px 10px;
+}
+.partners__card h4 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.partners__card small {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Work Sans", sans-serif;
+  color: rgba(33, 37, 41, 0.7490196078);
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #74C69D;
+}
+
+.footer__wrapper {
+  padding: 50px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__wrapper h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
+
+.footer__icons {
+  width: 243px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
