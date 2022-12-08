@@ -73,13 +73,6 @@ nav {
   padding: 30px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 75px;
   background-color: #74C69D;
   -webkit-transition: all 400ms ease;
@@ -87,6 +80,22 @@ nav {
 }
 nav button {
   display: none;
+}
+
+.nav__container {
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;  
+          width: 100%;
+}
+
+.nav__logo {
+  font-size: 24px;
+  color: #FFFFFF;
 }
 
 .nav__menu {
