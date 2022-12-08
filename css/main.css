@@ -113,9 +113,13 @@ nav button {
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
+.window-scroll a:hover {
+  color: #74C69D;
+}
 
 header {
-  margin-top: 115px;
+  margin-top: 50px;
+  padding-top: 120px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -326,4 +330,13 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  nav li {
+    display: none;
+  }
+  nav button {
+    display: inline-block;
+  }
 }
